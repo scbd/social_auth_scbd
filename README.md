@@ -3,10 +3,11 @@
   <br>
     <img src="https://www.cbd.int/app/images/cbd-logo-green-en.svg" width="400px"/>
   <br>
-<img src="https://raw.githubusercontent.com/scbd/stacks/master/dev/drupal/drupal-scbd.png" width="50px"/> <br>
+<img src="https://raw.githubusercontent.com/scbd/stacks/master/dev/drupal/drupal-scbd.png" width="150px"/> <br>
 <a href="https://www.drupal.org/8">Drupal 8</a> Module
 </p>
 CONTENTS OF THIS FILE
+
 ---------------------
 
  * Introduction
