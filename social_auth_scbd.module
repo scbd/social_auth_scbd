@@ -10,14 +10,14 @@ use Drupal\Core\Routing\RouteMatchInterface;
 /**
  * Implements hook_help().
  */
-function social_auth_google_help($route_name, RouteMatchInterface $route_match) {
+function social_auth_scbd_help($route_name, RouteMatchInterface $route_match) {
   $output = '';
 
   switch ($route_name) {
-    case 'social_auth_google.settings_form':
+    case 'social_auth_scbd.settings_form':
       $output = '<h3>' . t('Configuration instructions') . '</h3>';
       $output .= '<p>';
-      $output .= t('Configuration instructions and other useful documentation can be found from <a href="@handbook-url">Social Auth Google Handbook</a>.', ['@handbook-url' => 'https://www.drupal.org/node/2764227']);
+      $output .= t('Configuration instructions and other useful documentation can be found from <a href="@handbook-url">Social Auth SCBD README</a>.', ['@handbook-url' => 'https://github.com/scbd/social_auth_scbd']);
       $output .= '</p>';
       break;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\Tests\social_auth_google\Functional;
+namespace Drupal\Tests\social_auth_scbd\Functional;
 
 use Drupal\social_api\SocialApiSettingsFormBaseTest;
 
@@ -9,22 +9,22 @@ use Drupal\social_api\SocialApiSettingsFormBaseTest;
  *
  * @group social_auth
  *
- * @ingroup social_auth_google
+ * @ingroup social_auth_scbd
  */
-class SocialAuthGoogleSettingsFormTest extends SocialApiSettingsFormBaseTest {
+class SocialAuthSCBDSettingsFormTest extends SocialApiSettingsFormBaseTest {
   /**
    * Modules to enable.
    *
    * @var array
    */
-  public static $modules = ['social_auth_google'];
+  public static $modules = ['social_auth_scbd'];
 
   /**
    * {@inheritdoc}
    */
   protected function setUp() {
-    $this->module = 'social_auth_google';
-    $this->socialNetwork = 'google';
+    $this->module = 'social_auth_scbd';
+    $this->socialNetwork = 'scbd';
     $this->moduleType = 'social-auth';
 
     parent::setUp();

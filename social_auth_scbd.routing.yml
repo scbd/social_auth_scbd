@@ -1,0 +1,27 @@
+social_auth_scbd.redirect_to_google:
+  path: 'user/login/scbd'
+  defaults:
+    _controller: '\Drupal\social_auth_scbd\Controller\SCBDAuthController::redirectToSCBD'
+  requirements:
+    # Anonymous users can log in, but authenticated users can also associate a new provider.
+    _access: 'FALSE'
+  options:
+    no_cache: TRUE
+
+social_auth_scbd.callback:
+  path: 'user/login/scbd/callback'
+  defaults:
+    _controller: '\Drupal\social_auth_scbd\Controller\SCBDAuthController::callback'
+  requirements:
+    # Anonymous users can log in, but authenticated users can also associate a new provider.
+    _access: 'FALSE'
+  options:
+    no_cache: TRUE
+
+social_auth_scbd.settings_form:
+  path: 'admin/config/social-api/social-auth/scbd'
+  defaults:
+    _title: 'Social Auth SCBD settings'
+    _form: '\Drupal\social_auth_scbd\Form\SCBDAuthSettingsForm'
+  requirements:
+    _permission: 'administer social api authentication'

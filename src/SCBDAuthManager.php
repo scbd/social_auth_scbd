@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\social_auth_google;
+namespace Drupal\social_auth_scbd;
 
 use Drupal\social_auth\AuthManager\OAuth2Manager;
 use Drupal\Core\Config\ConfigFactory;
@@ -8,7 +8,7 @@ use Drupal\Core\Config\ConfigFactory;
 /**
  * Contains all the logic for Google OAuth2 authentication.
  */
-class GoogleAuthManager extends OAuth2Manager {
+class SCBDAuthManager extends OAuth2Manager {
 
   /**
    * Constructor.
@@ -17,7 +17,7 @@ class GoogleAuthManager extends OAuth2Manager {
    *   Used for accessing configuration object factory.
    */
   public function __construct(ConfigFactory $configFactory) {
-    parent::__construct($configFactory->get('social_auth_google.settings'));
+    parent::__construct($configFactory->get('social_auth_scbd.settings'));
   }
 
   /**
@@ -45,13 +45,13 @@ class GoogleAuthManager extends OAuth2Manager {
       'profile',
     ];
 
-    $google_scopes = $this->getScopes();
-    if ($google_scopes) {
-      if (strpos($google_scopes, ',')) {
-        $scopes = array_merge($scopes, explode(',', $google_scopes));
+    $scbd_scopes = $this->getScopes();
+    if ($scbd_scopes) {
+      if (strpos($scbd_scopes, ',')) {
+        $scopes = array_merge($scopes, explode(',', $scbd_scopes));
       }
       else {
-        $scopes[] = $google_scopes;
+        $scopes[] = $scbd_scopes;
       }
     }
 

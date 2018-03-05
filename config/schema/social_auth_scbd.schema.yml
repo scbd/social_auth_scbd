@@ -1,6 +1,6 @@
 social_auth_google.settings:
   type: config_object
-  label: 'Social Auth Google settings'
+  label: 'Social Auth SCBD settings'
   mapping:
     client_id:
       type: string
@@ -11,9 +11,3 @@ social_auth_google.settings:
     scopes:
       type: string
       label: 'Scopes to be requested'
-    endpoints:
-      type: string
-      label: 'API Endpoints to be requested'
-    restricted_domain:
-      type: string
-      label: 'Restricted Domain'
