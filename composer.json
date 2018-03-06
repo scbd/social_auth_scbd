@@ -1,5 +1,5 @@
 {
-    "name": "drupal/social_auth_scbd",
+    "name": "scbd/social_auth_scbd",
     "type": "drupal-module",
     "description": "Social Auth integration for SCBD.",
     "keywords": ["Drupal"],
